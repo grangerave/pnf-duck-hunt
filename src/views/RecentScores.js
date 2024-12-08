@@ -3,7 +3,7 @@ import Medal from '../images/medal.jpg';
 const recentScores = () => `<div class="col-md-4 col-sm-12">
             <div class="showScoresContainer">
                 <div class="scoresTop">       
-                    <h3>Recent Scores</h3>           
+                    <h3>Top Scores</h3>           
                     <button type="button" class="btn btn-primary refreshBtn">Refresh <i class="fas fa-sync-alt sync"></i>
                         <span class="spinner-border spinner-border-sm hide" id="recentScoreSpinner" role="status" aria-hidden="true"></span>
                     </button>

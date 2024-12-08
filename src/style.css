@@ -111,6 +111,12 @@ button[type="submit"] {
   height: 45px;
 }
 
+button[type="new"] {
+  width: 280px;
+  height: 55px;
+  align-items: center;
+}
+
 button[type="button"] {
   width: 150px;
   height: 45px;

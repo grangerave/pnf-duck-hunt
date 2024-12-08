@@ -1,4 +1,4 @@
-import AddScores from '../views/AddScore.js';
+import { AddScores, NewForm } from '../views/SubmitForm.js';
 import Footer from '../views/Footer.js';
 import { modalMessages, modalSetup } from '../views/Modals.js';
 import { recentScores } from '../views/RecentScores.js';
@@ -12,15 +12,22 @@ import {
 
 const setUpEnterListerners = () => {
   const leaderContent = document.querySelector('.leaderboard-content');
-  leaderContent.innerHTML = recentScores() + AddScores();
+  leaderContent.innerHTML = recentScores() + NewForm();
   document.body.innerHTML += modalMessages() + modalSetup() + Footer();
 
   window.addEventListener('DOMContentLoaded', () => {
+
+    const addContainer = document.querySelector('#submissionContainer')
+    const newBtn = document.querySelector('#newSubmission');
+
     const addForm = document.querySelector('#addScoreForm');
-    addForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      uploadGameScores(addForm);
-    });
+      addForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        uploadGameScores(addForm);
+        addContainer.style.display = "none";
+        newBtn.style.display = "initial";
+
+      });
 
     const overlayObject = startLeaderBoard();
     if (overlayObject.className === undefined) {
@@ -32,6 +39,14 @@ const setUpEnterListerners = () => {
     } else {
       populateFirstTime(overlayObject);
     }
+
+    
+    
+    newBtn.addEventListener('click', function(){
+      //newBtn.outerHTML=AddScores();
+      addContainer.style.display = "block";
+      newBtn.style.display = "none";
+    });
 
     const refreshBtn = document.querySelector('.refreshBtn');
     refreshBtn.addEventListener('click', refreshList);
