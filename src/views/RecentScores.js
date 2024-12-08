@@ -1,6 +1,6 @@
 import Medal from '../images/medal.jpg';
 
-const recentScores = () => `<div class="col-md-6 col-sm-12">
+const recentScores = () => `<div class="col-md-4 col-sm-12">
             <div class="showScoresContainer">
                 <div class="scoresTop">       
                     <h3>Recent Scores</h3>           
@@ -17,10 +17,15 @@ const recentScores = () => `<div class="col-md-6 col-sm-12">
             </div>
         </div>`;
 
-const buildListView = (user = '', score = 'No Scores Available') => `<li>
+//only show medal for first 3 indices
+const buildListView = (user = '', score = 'No Scores Available',index=0) => (index<3) ?
+  `<li>
         <span>${user}: ${score}</span>
         <img src="${Medal}" class="medal" alt="medal icon"/>
-    </li>`;
+    </li>` :
+      `<li>
+        <span>${user}: ${score}</span>
+    </li>`
 
 const populateScoresList = (ScoresData) => {
   const dataLength = ScoresData.length;
@@ -29,9 +34,9 @@ const populateScoresList = (ScoresData) => {
   let listScoresItems = '';
 
   if (dataLength > 0) {
-    ScoresData.forEach((data) => {
-      listScoresItems += buildListView(data.user, data.score);
-    });
+    for(let i = 0; i < dataLength;i++){
+      listScoresItems += buildListView(ScoresData[i].user,ScoresData[i].score,i)
+    }
     scoresView.innerHTML = listScoresItems;
   } else {
     scoresView.innerHTML = buildListView();
