@@ -26,7 +26,7 @@ eval("/*!\n  * Bootstrap v5.3.3 (https://getbootstrap.com/)\n  * Copyright 2011-
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,600;1,700&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* Google font import */\n\n/* Reset Styles */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n/* Variables */\n:root {\n  --primary-color-2: #e2f0f9;\n  --primary-color-1: #286fb4;\n  --accent-color: #b0dde4;\n  --neutral-color-1: #286fb4;\n  --neutral-color-2: #286fb4;\n  --white: #fff;\n  --red: red;\n  --green: green;\n  --font: \"Poppins\", sans-serif;\n}\n\n/* Global styles */\nhtml {\n  overflow-x: hidden;\n}\n\nbody {\n  font-size: 16px;\n  font-family: var(--font);\n  background: var(--primary-color-2);\n  position: relative;\n  transition: background ease-out 1s 0.1s;\n}\n\n/* Main General styles */\nmain {\n  padding: 50px 10% 10px;\n  overflow-y: auto;\n  min-height: 95vh;\n}\n\nh1 {\n  font-size: 2.5rem;\n}\n\nh1,\nh2 {\n  color: var(--primary-color-1);\n  font-weight: normal;\n}\n\nh3 {\n  color: var(--primary-color-1);\n  font-weight: normal;\n}\n\nfooter {\n  height: 50px;\n  width: 100%;\n  padding: 10px 10px 0 10px;\n  bottom: 0;\n  color: black;\n  text-align: center;\n}\n\n/** Leaderboard content styling **/\n\nul {\n  margin-top: 20px;\n  padding-left: 0;\n  list-style: none;\n  border: solid var(--accent-color);\n  border-radius: 5px;\n  max-height: 600px;\n  overflow-y: auto;\n}\n\nli {\n  background: var(--white);\n  border-radius: 5px;\n  margin: 10px 10px 5px 10px;\n  padding: 10px;\n  display: flex;\n  justify-content: space-between;\n  box-shadow: 0 0 10px var(--neutral-color-2);\n  transition: transform 1s, filter 0.5s ease-out;\n}\n\nli:hover {\n  transform: scale(1.03);\n}\n\n.form-control {\n  height: 50px;\n  border-left: solid 6px var(--accent-color);\n  text-transform: capitalize;\n}\n\n.form-control:focus {\n  height: 50px;\n  border-left: solid 6px var(--neutral-color-2);\n  box-shadow: 0 0 10px var(--neutral-color-2);\n  transition: border-left ease-out 0.7s 0.1s;\n}\n\nbutton[type=\"submit\"] {\n  float: right;\n  width: 180px;\n  height: 45px;\n}\n\nbutton[type=\"new\"] {\n  width: 280px;\n  height: 55px;\n  align-items: center;\n}\n\nbutton[type=\"button\"] {\n  width: 150px;\n  height: 45px;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.scoresTop {\n  display: flex;\n  justify-content: space-between;\n}\n\n.btn-primary {\n  background: var(--neutral-color-1);\n  border: none;\n}\n\n.btn-primary:active {\n  background: var(--neutral-color-2);\n  border: none;\n}\n\n.btn-primary:focus {\n  background: var(--neutral-color-2);\n  border: none;\n  box-shadow: 0 0 10px var(--neutral-color-2);\n}\n\n.btn-primary:hover {\n  background: var(--neutral-color-2);\n  border: none;\n  box-shadow: 0 0 10px var(--neutral-color-2);\n}\n\n.hide {\n  display: none;\n}\n\n.medal {\n  width: 30px;\n  height: 30px;\n}\n\n.show {\n  display: inline-block;\n}\n\n.loader {\n  display: flex;\n  justify-content: center;\n  height: 100%;\n  width: 100%;\n  position: fixed;\n  z-index: 1;\n  top: 0;\n  left: 0;\n  backdrop-filter: blur(6px);\n  background: var(--neutral-color-1);\n  opacity: 0.8;\n  overflow-x: hidden;\n  transition: 0.5s;\n  visibility: hidden;\n}\n\n.loaderImg {\n  align-self: center;\n}\n\n.createGameMsg {\n  color: var(--red);\n}\n\n.success {\n  color: var(--green);\n}\n\n.failure {\n  color: var(--red);\n}\n\n@media (min-width: 768px) {\n  .showScoresContainer {\n    width: 92%;\n  }\n\n  .addContainer {\n    width: 92%;\n  }\n}\n\n@media (max-width: 768px) {\n  body {\n    min-height: 95vh;\n  }\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,600;1,700&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* Google font import */\n\n/* Reset Styles */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n/* Variables */\n:root {\n  --primary-color-2: #e2f0f9;\n  --primary-color-1: #286fb4;\n  --accent-color: #b0dde4;\n  --neutral-color-1: #286fb4;\n  --neutral-color-2: #286fb4;\n  --white: #fff;\n  --red: red;\n  --green: green;\n  --font: \"Poppins\", sans-serif;\n}\n\n/* Global styles */\nhtml {\n  overflow-x: hidden;\n}\n\nbody {\n  font-size: 16px;\n  font-family: var(--font);\n  background: var(--primary-color-2);\n  position: relative;\n  transition: background ease-out 1s 0.1s;\n}\n\n/* Main General styles */\nmain {\n  padding: 50px 10% 10px;\n  overflow-y: auto;\n  min-height: 95vh;\n}\n\nh1 {\n  font-size: 2.5rem;\n}\n\nh1,\nh2 {\n  color: var(--primary-color-1);\n  font-weight: normal;\n}\n\nh3 {\n  color: var(--primary-color-1);\n  font-weight: normal;\n}\n\nfooter {\n  height: 50px;\n  width: 100%;\n  padding: 10px 10px 0 10px;\n  bottom: 0;\n  color: black;\n  text-align: center;\n}\n\n/** Leaderboard content styling **/\n\nul {\n  margin-top: 20px;\n  padding-left: 0;\n  list-style: none;\n  border: solid var(--accent-color);\n  border-radius: 5px;\n  max-height: 600px;\n  overflow-y: auto;\n}\n\nli {\n  background: var(--white);\n  border-radius: 5px;\n  margin: 10px 10px 5px 10px;\n  padding: 10px;\n  display: flex;\n  justify-content: space-between;\n  box-shadow: 0 0 10px var(--neutral-color-2);\n  transition: transform 1s, filter 0.5s ease-out;\n}\n\nli:hover {\n  transform: scale(1.03);\n}\n\n.form-control {\n  height: 50px;\n  border-left: solid 6px var(--accent-color);\n  text-transform: capitalize;\n}\n\n.form-control:focus {\n  height: 50px;\n  border-left: solid 6px var(--neutral-color-2);\n  box-shadow: 0 0 10px var(--neutral-color-2);\n  transition: border-left ease-out 0.7s 0.1s;\n}\n\nbutton[type=\"submit\"] {\n  float: right;\n  width: 180px;\n  height: 45px;\n}\n\nbutton[type=\"entry\"] {\n  float: left;\n  width: 220px;\n  height: 45px;\n}\n\nbutton[type=\"new\"] {\n  width: 280px;\n  height: 55px;\n  align-items: center;\n}\n\nbutton[type=\"button\"] {\n  width: 150px;\n  height: 45px;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.scoresTop {\n  display: flex;\n  justify-content: space-between;\n}\n\n.btn-primary {\n  background: var(--neutral-color-1);\n  border: none;\n}\n\n.btn-primary:active {\n  background: var(--neutral-color-2);\n  border: none;\n}\n\n.btn-primary:focus {\n  background: var(--neutral-color-2);\n  border: none;\n  box-shadow: 0 0 10px var(--neutral-color-2);\n}\n\n.btn-primary:hover {\n  background: var(--neutral-color-2);\n  border: none;\n  box-shadow: 0 0 10px var(--neutral-color-2);\n}\n\nsection {\n  position: relative;\n  margin: auto;\n  background: var(--white);\n}\n\n#leftArrow {\n  all: unset;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  padding: 0.2rem;\n  color: #286fb4;\n  font-size: 2rem;\n  cursor: pointer;\n}\n\n#rightArrow {\n  all: unset;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  padding: 0.2rem;\n  color: #286fb4;\n  font-size: 2rem;\n  cursor: pointer;\n}\n\n#leftArrow:hover,\n#rightArrow:hover {\n  background: rgb(0, 0, 0, 0.2);\n}\n\n.hide {\n  display: none;\n}\n\n.medal {\n  width: 30px;\n  height: 30px;\n}\n\n.show {\n  display: inline-block;\n}\n\n.loader {\n  display: flex;\n  justify-content: center;\n  height: 100%;\n  width: 100%;\n  position: fixed;\n  z-index: 1;\n  top: 0;\n  left: 0;\n  backdrop-filter: blur(6px);\n  background: var(--neutral-color-1);\n  opacity: 0.8;\n  overflow-x: hidden;\n  transition: 0.5s;\n  visibility: hidden;\n}\n\n.loaderImg {\n  align-self: center;\n}\n\n.createGameMsg {\n  color: var(--red);\n}\n\n.success {\n  color: var(--green);\n}\n\n.failure {\n  color: var(--red);\n}\n\n@media (min-width: 768px) {\n  .showScoresContainer {\n    width: 92%;\n  }\n\n  .addContainer {\n    width: 92%;\n  }\n}\n\n@media (max-width: 768px) {\n  body {\n    min-height: 95vh;\n  }\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -60,6 +60,336 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"f71fc5b8cb9fbce622e678ba41c22a58.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile000.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile001.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile001.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"3d4798d9285e038acda7c4074d0c8cc6.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile001.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile002.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile002.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"6e25e3e05d7390d357924bced32f1eee.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile002.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile003.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile003.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"fa5c57c85270c6132515f451fcde80e3.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile003.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile004.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile004.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"3b392b57cc335394cffaac4e5c7cd5c3.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile004.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile005.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile005.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"47f8c6d0279ee449ab2d9e2c94b7d41a.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile005.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile006.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile006.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"9d711fbd7a79282c935a83a0a2206c50.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile006.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile007.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile007.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"5c6ccbc95f3fdd1759ec682eab63d9a2.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile007.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile009.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile009.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"3f040c8d8eb947dc8af1bddddd53d8ac.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile009.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile010.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile010.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"7943bb5bc16999c8ba27bb705cd3ab4d.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile010.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile011.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile011.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"35047ec7ccc101b1ea7c8274a5c6e2c3.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile011.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile012.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile012.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"c2393583086647a45078791dab3f686f.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile012.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile013.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile013.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"1dd4b9c15e66d4ecb77922c307621acc.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile013.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile014.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile014.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"e3a102f7f296e67ab4583ff60609dbae.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile014.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile015.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile015.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"d5aaafa4b85df712587120f749dd1c7b.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile015.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile016.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile016.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"86b88c53392793897bcb2e404b42583c.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile016.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile018.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile018.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"8171628bfe870c2faf8f67700959b15b.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile018.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile019.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile019.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"39be9b00788edf7d38b966374a9171cf.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile019.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile020.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile020.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"280ea05bc076e44763f914c7ed6cc6ff.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile020.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile021.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile021.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"0697e7d07d54e4aa760ce7203630de23.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile021.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile022.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile022.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"e2dc4d4ee25739f24e5ae0cfaa80b8e3.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile022.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile023.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile023.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"0a894e11a4ce05030f97330539c3b014.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile023.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile024.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile024.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"2952368b18190c5c27a863af713818f3.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile024.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile025.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile025.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"e330a72184adfd82d202178253843f7b.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile025.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile027.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile027.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"a20c0d36b6382973cd1df5535451bf79.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile027.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile028.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile028.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"16635e75612ff622d050145e6145a9e3.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile028.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile029.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile029.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"29c45bdbbbbafd1b101b55fa9115ac34.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile029.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile030.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile030.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"aa2e51d7299e7df9a055f66252e8eabf.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile030.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile031.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile031.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"6c2faba54b7c41fb312d780f7c4ba05d.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile031.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile032.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile032.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"5ab786c28d0dbd3088c295cce18ed8d2.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile032.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/ducks/tile033.jpg":
+/*!**************************************!*\
+  !*** ./src/images/ducks/tile033.jpg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"42ea7746f01d074fcd4bafa473422c14.jpg\");\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/tile033.jpg?");
 
 /***/ }),
 
@@ -180,7 +510,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _views_SubmitForm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/SubmitForm.js */ \"./src/views/SubmitForm.js\");\n/* harmony import */ var _views_Footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/Footer.js */ \"./src/views/Footer.js\");\n/* harmony import */ var _views_Modals_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/Modals.js */ \"./src/views/Modals.js\");\n/* harmony import */ var _views_RecentScores_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/RecentScores.js */ \"./src/views/RecentScores.js\");\n/* harmony import */ var _Starter_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Starter.js */ \"./src/controllers/Starter.js\");\n/* harmony import */ var _ServiceController_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ServiceController.js */ \"./src/controllers/ServiceController.js\");\n\n\n\n\n\n\n\nconst setUpEnterListerners = () => {\n  const leaderContent = document.querySelector('.leaderboard-content');\n  leaderContent.innerHTML = (0,_views_RecentScores_js__WEBPACK_IMPORTED_MODULE_3__.recentScores)() + (0,_views_SubmitForm_js__WEBPACK_IMPORTED_MODULE_0__.NewForm)();\n  document.body.innerHTML += (0,_views_Modals_js__WEBPACK_IMPORTED_MODULE_2__.modalMessages)() + (0,_views_Modals_js__WEBPACK_IMPORTED_MODULE_2__.modalSetup)() + (0,_views_Footer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n  window.addEventListener('DOMContentLoaded', () => {\n\n    const addContainer = document.querySelector('#submissionContainer')\n    const newBtn = document.querySelector('#newSubmission');\n\n    const addForm = document.querySelector('#addScoreForm');\n      addForm.addEventListener('submit', (e) => {\n        e.preventDefault();\n        (0,_ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.uploadGameScores)(addForm);\n        addContainer.style.display = \"none\";\n        newBtn.style.display = \"initial\";\n\n      });\n\n    const overlayObject = (0,_Starter_js__WEBPACK_IMPORTED_MODULE_4__.startLeaderBoard)();\n    if (overlayObject.className === undefined) {\n      const setupForm = document.querySelector('#setupLeaderBoard');\n      setupForm.addEventListener('submit', (e) => {\n        e.preventDefault();\n        (0,_ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.createGame)(setupForm, overlayObject);\n      });\n    } else {\n      (0,_ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.populateFirstTime)(overlayObject);\n    }\n\n    \n    \n    newBtn.addEventListener('click', function(){\n      //newBtn.outerHTML=AddScores();\n      addContainer.style.display = \"block\";\n      newBtn.style.display = \"none\";\n    });\n\n    const refreshBtn = document.querySelector('.refreshBtn');\n    refreshBtn.addEventListener('click', _ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.refreshList);\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setUpEnterListerners);\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/controllers/EventListeners.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _views_SubmitForm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/SubmitForm.js */ \"./src/views/SubmitForm.js\");\n/* harmony import */ var _views_Footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/Footer.js */ \"./src/views/Footer.js\");\n/* harmony import */ var _views_Modals_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/Modals.js */ \"./src/views/Modals.js\");\n/* harmony import */ var _views_RecentScores_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/RecentScores.js */ \"./src/views/RecentScores.js\");\n/* harmony import */ var _Starter_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Starter.js */ \"./src/controllers/Starter.js\");\n/* harmony import */ var _ServiceController_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ServiceController.js */ \"./src/controllers/ServiceController.js\");\n\n\n\n\n\n\n\nconst setUpEnterListerners = () => {\n  const leaderContent = document.querySelector('.leaderboard-content');\n  leaderContent.innerHTML = (0,_views_RecentScores_js__WEBPACK_IMPORTED_MODULE_3__.recentScores)() + (0,_views_SubmitForm_js__WEBPACK_IMPORTED_MODULE_0__.NewForm)();\n  document.body.innerHTML += (0,_views_Modals_js__WEBPACK_IMPORTED_MODULE_2__.modalMessages)() + (0,_views_Modals_js__WEBPACK_IMPORTED_MODULE_2__.modalSetup)() + (0,_views_Footer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n  window.addEventListener('DOMContentLoaded', () => {\n\n    const addContainer = document.querySelector('#submissionContainer')\n    const newBtn = document.querySelector('#newSubmission');\n\n    const addForm = document.querySelector('#addScoreForm');\n      addForm.addEventListener('submit', (e) => {\n        e.preventDefault();\n        (0,_ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.uploadGameScores)(addForm);\n        addContainer.style.display = \"none\";\n        newBtn.style.display = \"initial\";\n\n      });\n\n    const overlayObject = (0,_Starter_js__WEBPACK_IMPORTED_MODULE_4__.startLeaderBoard)();\n    if (overlayObject.className === undefined) {\n      const setupForm = document.querySelector('#setupLeaderBoard');\n      setupForm.addEventListener('submit', (e) => {\n        e.preventDefault();\n        (0,_ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.createGame)(setupForm, overlayObject);\n      });\n    } else {\n      (0,_ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.populateFirstTime)(overlayObject);\n    }\n    \n    newBtn.addEventListener('click', function(){\n      addContainer.style.display = \"block\";\n      newBtn.style.display = \"none\";\n    });\n\n    const refreshBtn = document.querySelector('.refreshBtn');\n    refreshBtn.addEventListener('click', _ServiceController_js__WEBPACK_IMPORTED_MODULE_5__.refreshList);\n\n    const prevBtn = document.querySelector('#leftArrow');\n    prevBtn.addEventListener('click',_views_SubmitForm_js__WEBPACK_IMPORTED_MODULE_0__.prevImg);\n\n    const nextBtn = document.querySelector('#rightArrow');\n    nextBtn.addEventListener('click',_views_SubmitForm_js__WEBPACK_IMPORTED_MODULE_0__.nextImg);\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setUpEnterListerners);\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/controllers/EventListeners.js?");
 
 /***/ }),
 
@@ -228,6 +558,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/images/ducks sync ^\\.\\/.*$":
+/*!******************************************************!*\
+  !*** ./src/images/ducks/ sync nonrecursive ^\.\/.*$ ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./tile000.jpg\": \"./src/images/ducks/tile000.jpg\",\n\t\"./tile001.jpg\": \"./src/images/ducks/tile001.jpg\",\n\t\"./tile002.jpg\": \"./src/images/ducks/tile002.jpg\",\n\t\"./tile003.jpg\": \"./src/images/ducks/tile003.jpg\",\n\t\"./tile004.jpg\": \"./src/images/ducks/tile004.jpg\",\n\t\"./tile005.jpg\": \"./src/images/ducks/tile005.jpg\",\n\t\"./tile006.jpg\": \"./src/images/ducks/tile006.jpg\",\n\t\"./tile007.jpg\": \"./src/images/ducks/tile007.jpg\",\n\t\"./tile009.jpg\": \"./src/images/ducks/tile009.jpg\",\n\t\"./tile010.jpg\": \"./src/images/ducks/tile010.jpg\",\n\t\"./tile011.jpg\": \"./src/images/ducks/tile011.jpg\",\n\t\"./tile012.jpg\": \"./src/images/ducks/tile012.jpg\",\n\t\"./tile013.jpg\": \"./src/images/ducks/tile013.jpg\",\n\t\"./tile014.jpg\": \"./src/images/ducks/tile014.jpg\",\n\t\"./tile015.jpg\": \"./src/images/ducks/tile015.jpg\",\n\t\"./tile016.jpg\": \"./src/images/ducks/tile016.jpg\",\n\t\"./tile018.jpg\": \"./src/images/ducks/tile018.jpg\",\n\t\"./tile019.jpg\": \"./src/images/ducks/tile019.jpg\",\n\t\"./tile020.jpg\": \"./src/images/ducks/tile020.jpg\",\n\t\"./tile021.jpg\": \"./src/images/ducks/tile021.jpg\",\n\t\"./tile022.jpg\": \"./src/images/ducks/tile022.jpg\",\n\t\"./tile023.jpg\": \"./src/images/ducks/tile023.jpg\",\n\t\"./tile024.jpg\": \"./src/images/ducks/tile024.jpg\",\n\t\"./tile025.jpg\": \"./src/images/ducks/tile025.jpg\",\n\t\"./tile027.jpg\": \"./src/images/ducks/tile027.jpg\",\n\t\"./tile028.jpg\": \"./src/images/ducks/tile028.jpg\",\n\t\"./tile029.jpg\": \"./src/images/ducks/tile029.jpg\",\n\t\"./tile030.jpg\": \"./src/images/ducks/tile030.jpg\",\n\t\"./tile031.jpg\": \"./src/images/ducks/tile031.jpg\",\n\t\"./tile032.jpg\": \"./src/images/ducks/tile032.jpg\",\n\t\"./tile033.jpg\": \"./src/images/ducks/tile033.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images/ducks sync ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/images/ducks/_sync_nonrecursive_^\\.\\/.*$?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -236,6 +576,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _controllers_EventListeners_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controllers/EventListeners.js */ \"./src/controllers/EventListeners.js\");\n\n\n\n(0,_controllers_EventListeners_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/models/Images.js":
+/*!******************************!*\
+  !*** ./src/models/Images.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nconst images = __webpack_require__(\"./src/images/ducks sync ^\\\\.\\\\/.*$\");\nconst imageList = images.keys().map(image => images(image));\n\nfunction ImageGallery() {\n  return (\n    imageList.map((image, index) => (image.default))\n  );\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ImageGallery);\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/models/Images.js?");
 
 /***/ }),
 
@@ -312,7 +663,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   AddScores: () => (/* binding */ AddScores),\n/* harmony export */   NewForm: () => (/* binding */ NewForm)\n/* harmony export */ });\n/* harmony import */ var _images_ducks_tile000_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/ducks/tile000.jpg */ \"./src/images/ducks/tile000.jpg\");\n\n\nconst NewForm = () => `<div class=\"col-md-8 col-sm-12\">\n            <div class=\"addContainer\" style=\"text-align: center;\">\n                <button type=\"new\" id=\"newSubmission\" class=\"btn btn-primary\">\n                    Submit a New Guess\n                </button>\n            </div>\n            <div class=\"addContainer\" id=\"submissionContainer\" style=\"display:none\">\n                <h3 class=\"text-center\">Add your score</h3>\n                <form method=\"post\" id=\"addScoreForm\" class=\"my-4\">\n                    <div class=\"mb-3\">\n                        <input type=\"text\" class=\"form-control\" id=\"nameField\" placeholder=\"Add your name\" maxlength=\"15\" required>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-3\">\n                            <img src=\"${_images_ducks_tile000_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]}\" class=\"duck\" alt=\"duck image\"/>\n                        </div>\n                        <div class=\"col-6\">\n                            <h4>Nearest Tool</h4>\n                            <input list=\"tools\" class=\"form-control\" id=\"location\" placeholder=\"Nearest Tool\" required>\n                            <datalist id=\"tools\">\n                                <option value=\"Edge\">\n                                <option value=\"Firefox\">\n                                <option value=\"Chrome\">\n                                <option value=\"Opera\">\n                                <option value=\"Safari\">\n                            </datalist>\n                        </div>\n                        <div class=\"col-3\">\n                            <h4>Room LL</h4>\n                            <input type=\"number\" class=\"form-control\" id=\"location\" placeholder=\"\" maxlength=\"3\" pattern=\"[0-9]+\" required>\n                        </div>\n                    </div>\n                    <div class=\"mb-3\">\n                        <input type=\"number\" class=\"form-control\" id=\"scoreField\" placeholder=\"Add your score\" maxlength=\"4\" pattern=\"[0-9]+\" required>\n                    </div>\n                    <div class=\"mb-3\">\n                        <button type=\"submit\" id=\"submitScore\" class=\"btn btn-primary\">\n                            Add Score\n                            <span class=\"spinner-border spinner-border-sm hide\" id=\"addScoreSpinner\" role=\"status\" aria-hidden=\"true\"></span>\n                        </button>\n                    </div>\n                </form>\n            </div>\n        </div>`;\n\nconst AddScores = () => `<div class=\"addContainer\" style=\"text-align: center;\">\n                <h3 class=\"text-center\">Add your score</h3>\n                <form method=\"post\" id=\"addScoreForm\" class=\"my-4\">\n                    <div class=\"mb-3\">\n                        <input type=\"text\" class=\"form-control\" id=\"nameField\" placeholder=\"Add your name\" maxlength=\"15\" required>\n                    </div>\n                    <div class=\"mb-3\">\n                        <input type=\"number\" class=\"form-control\" id=\"scoreField\" placeholder=\"Add your score\" maxlength=\"4\" pattern=\"[0-9]+\" required>\n                    </div>\n                    <div class=\"mb-3\">\n                        <button type=\"submit\" id=\"submitScore\" class=\"btn btn-primary\">\n                            Add Score\n                            <span class=\"spinner-border spinner-border-sm hide\" id=\"addScoreSpinner\" role=\"status\" aria-hidden=\"true\"></span>\n                        </button>\n                    </div>\n                </form>\n            </div>`;\n\n\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/views/SubmitForm.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   NewForm: () => (/* binding */ NewForm),\n/* harmony export */   nextImg: () => (/* binding */ nextImg),\n/* harmony export */   prevImg: () => (/* binding */ prevImg)\n/* harmony export */ });\n/* harmony import */ var _models_Images_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/Images.js */ \"./src/models/Images.js\");\n\n\nconst duckImages = (0,_models_Images_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nvar index = 0;\n\nconst NewForm = () => `<div class=\"col-md-8 col-sm-12\">\n            <div class=\"addContainer\" style=\"text-align: center;\">\n                <button type=\"new\" id=\"newSubmission\" class=\"btn btn-primary\">\n                    Submit a New Guess\n                </button>\n            </div>\n            <div class=\"addContainer\" id=\"submissionContainer\" style=\"display:none\">\n                <h3 class=\"text-center\">Submit a New Guess</h3>\n                <form method=\"post\" id=\"addScoreForm\" class=\"my-4\">\n                    <div class=\"mb-3\">\n                        <div class=\"row\">\n                            <div class=\"col-9\">\n                                <input type=\"text\" class=\"form-control\" id=\"nameField\" placeholder=\"Add your name\" maxlength=\"15\" required>\n                            </div>\n                            <div class=\"col-3\">\n                                <button type=\"submit\" id=\"submitScore\" class=\"btn btn-primary\">\n                                    Submit Guess\n                                    <span class=\"spinner-border spinner-border-sm hide\" id=\"addScoreSpinner\" role=\"status\" aria-hidden=\"true\"></span>\n                                </button>\n                            </div>\n                        </div>\n                    </div>\n                </form>\n                \n                    <div class=\"row\">\n                        <div class=\"col-4\">\n                            <section class=\"text-center\">\n                                <button id=\"leftArrow\" type=\"button\">❮</button>\n                                <article id=\"duck-container\" style=\"height:220px\">\n                                    <img src=\"${duckImages[index]}\" class=\"img-fluid\" alt=\"duck${index}\"/>\n                                </article>\n                                <button id=\"rightArrow\" type=\"button\">❯</button>\n                            </section>\n                        </div>\n                        <form method=\"post\" id=\"\" class=\"col-8\">\n                            <div class=\"mb-3\">\n                                <h4>Nearest Tool</h4>\n                                <input list=\"tools\" class=\"form-control\" id=\"tool\" placeholder=\"Nearest Tool\" required>\n                                <datalist id=\"tools\">\n                                    <option value=\"Edge\">\n                                    <option value=\"Firefox\">\n                                    <option value=\"Chrome\">\n                                    <option value=\"Opera\">\n                                    <option value=\"Safari\">\n                                </datalist>\n                            </div>\n                            <div class=\"mb-3\">\n                                <h4>Room (eg. LL000)</h4>\n                                <input type=\"number\" class=\"form-control\" id=\"location\" placeholder=\"\" maxlength=\"3\" pattern=\"[0-9]+\" required>\n                            </div>\n                            <div class=\"mb-3\">\n                                <button type=\"submit\" id=\"updateLocation\" class=\"btn btn-primary\" style=\"width:220px\">\n                                    Update Duck Location\n                                </button>\n                            </div>\n                        </form>\n                    </div>\n            </div>\n        </div>`;\n\n\n//const duckContainer = document.getElementById(\"duck-container\");\n\nfunction prevImg() {\n    if (index > 0 && index < duckImages.length) {\n        index--;\n    } else {\n        index = duckImages.length - 1;\n    }\n    console.log(index);\n    document.getElementById(\"duck-container\").innerHTML = `<img src=${duckImages[index]} class=\"img-fluid\" alt=\"duck${index}\"/>`;\n}\n\nfunction nextImg() {\n    if (index >= 0 && index < duckImages.length-1) {\n        index++;\n    } else {\n        index = 0;\n    }\n    console.log(index);\n    document.getElementById(\"duck-container\").innerHTML = `<img src=${duckImages[index]} class=\"img-fluid\" alt=\"duck${index}\"/>`;//`<img src=\"${duckImages[index]}\" class=\"img-fluid\" alt=\"duck${index}/>`;\n}\n\nconst AddScores = () => `<div class=\"addContainer\" style=\"text-align: center;\">\n                <h3 class=\"text-center\">Add your score</h3>\n                <form method=\"post\" id=\"addScoreForm\" class=\"my-4\">\n                    <div class=\"mb-3\">\n                        <input type=\"text\" class=\"form-control\" id=\"nameField\" placeholder=\"Add your name\" maxlength=\"15\" required>\n                    </div>\n                    <div class=\"mb-3\">\n                        <input type=\"number\" class=\"form-control\" id=\"scoreField\" placeholder=\"Add your score\" maxlength=\"4\" pattern=\"[0-9]+\" required>\n                    </div>\n                    <div class=\"mb-3\">\n                        <button type=\"submit\" id=\"submitScore\" class=\"btn btn-primary\">\n                            Add Score\n                            <span class=\"spinner-border spinner-border-sm hide\" id=\"addScoreSpinner\" role=\"status\" aria-hidden=\"true\"></span>\n                        </button>\n                    </div>\n                    <div class=\"col-4\">\n                        <button id=\"leftArrow\" onclick=previousImg()>❮</button>\n                        <img src=\"${duckImages[index]}\" class=\"duck-img\" id=\"duck\" alt=\"duck${index}\"/>\n                        <button id=\"rightArrow\" onclick=nextImg()>❯</button>\n                    </div>\n                </form>\n            </div>`;\n\n\n\n\n//# sourceURL=webpack://pnf-duck-hunt/./src/views/SubmitForm.js?");
 
 /***/ })
 

@@ -1,4 +1,4 @@
-import { AddScores, NewForm } from '../views/SubmitForm.js';
+import {NewForm,prevImg,nextImg } from '../views/SubmitForm.js';
 import Footer from '../views/Footer.js';
 import { modalMessages, modalSetup } from '../views/Modals.js';
 import { recentScores } from '../views/RecentScores.js';
@@ -39,17 +39,20 @@ const setUpEnterListerners = () => {
     } else {
       populateFirstTime(overlayObject);
     }
-
-    
     
     newBtn.addEventListener('click', function(){
-      //newBtn.outerHTML=AddScores();
       addContainer.style.display = "block";
       newBtn.style.display = "none";
     });
 
     const refreshBtn = document.querySelector('.refreshBtn');
     refreshBtn.addEventListener('click', refreshList);
+
+    const prevBtn = document.querySelector('#leftArrow');
+    prevBtn.addEventListener('click',prevImg);
+
+    const nextBtn = document.querySelector('#rightArrow');
+    nextBtn.addEventListener('click',nextImg);
   });
 };
 

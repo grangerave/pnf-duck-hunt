@@ -111,6 +111,12 @@ button[type="submit"] {
   height: 45px;
 }
 
+button[type="entry"] {
+  float: left;
+  width: 220px;
+  height: 45px;
+}
+
 button[type="new"] {
   width: 280px;
   height: 55px;
@@ -150,6 +156,41 @@ button[type="button"] {
   background: var(--neutral-color-2);
   border: none;
   box-shadow: 0 0 10px var(--neutral-color-2);
+}
+
+section {
+  position: relative;
+  margin: auto;
+  background: var(--white);
+}
+
+#leftArrow {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem;
+  color: #286fb4;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#rightArrow {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem;
+  color: #286fb4;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#leftArrow:hover,
+#rightArrow:hover {
+  background: rgb(0, 0, 0, 0.2);
 }
 
 .hide {
