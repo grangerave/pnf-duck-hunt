@@ -1,8 +1,9 @@
 import ImageGallery from '../models/Images.js'
+import {LocationList,getLocation} from '../models/LocationList.js'
 
 const duckImages = ImageGallery();
 
-var index = 0;
+var duckID = 0;
 
 const NewForm = () => `<div class="col-md-8 col-sm-12">
             <div class="addContainer" style="text-align: center;">
@@ -27,28 +28,23 @@ const NewForm = () => `<div class="col-md-8 col-sm-12">
                         </div>
                     </div>
                 </form>
-                
                     <div class="row">
                         <div class="col-4">
                             <section class="text-center">
                                 <button id="leftArrow" type="button">❮</button>
                                 <article id="duck-container" style="height:220px">
-                                    <img src="${duckImages[index]}" class="img-fluid" alt="duck${index}"/>
+                                    <img src="${duckImages[duckID]}" class="img-fluid" alt="duck${duckID}"/>
                                 </article>
                                 <button id="rightArrow" type="button">❯</button>
                             </section>
                         </div>
-                        <form method="post" id="" class="col-8">
+                        <form id="duckLocationEntry" class="col-8">
                             <div class="mb-3">
                                 <h4>Nearest Tool</h4>
-                                <input list="tools" class="form-control" id="tool" placeholder="Nearest Tool" required>
-                                <datalist id="tools">
-                                    <option value="Edge">
-                                    <option value="Firefox">
-                                    <option value="Chrome">
-                                    <option value="Opera">
-                                    <option value="Safari">
-                                </datalist>
+                                <select id="tools" class="form-control" id="tool" required>
+                                    <option value="-1"> </option>
+                                    ${LocationList()}
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <h4>Room (eg. LL000)</h4>
@@ -61,53 +57,56 @@ const NewForm = () => `<div class="col-md-8 col-sm-12">
                             </div>
                         </form>
                     </div>
+                    ${currentSubmission()}
             </div>
         </div>`;
 
 
-//const duckContainer = document.getElementById("duck-container");
-
 function prevImg() {
-    if (index > 0 && index < duckImages.length) {
-        index--;
+    if (duckID > 0 && duckID < duckImages.length) {
+        duckID--;
     } else {
-        index = duckImages.length - 1;
+        duckID = duckImages.length - 1;
     }
-    console.log(index);
-    document.getElementById("duck-container").innerHTML = `<img src=${duckImages[index]} class="img-fluid" alt="duck${index}"/>`;
+    document.getElementById("duck-container").innerHTML = `<img src=${duckImages[duckID]} class="img-fluid" alt="duck${duckID}" title="duck${duckID}"/>`;
 }
 
 function nextImg() {
-    if (index >= 0 && index < duckImages.length-1) {
-        index++;
+    if (duckID >= 0 && duckID < duckImages.length-1) {
+        duckID++;
     } else {
-        index = 0;
+        duckID = 0;
     }
-    console.log(index);
-    document.getElementById("duck-container").innerHTML = `<img src=${duckImages[index]} class="img-fluid" alt="duck${index}"/>`;//`<img src="${duckImages[index]}" class="img-fluid" alt="duck${index}/>`;
+    document.getElementById("duck-container").innerHTML = `<img src=${duckImages[duckID]} class="img-fluid" alt="duck${duckID}" title="duck${duckID}"/>`;
 }
 
-const AddScores = () => `<div class="addContainer" style="text-align: center;">
-                <h3 class="text-center">Add your score</h3>
-                <form method="post" id="addScoreForm" class="my-4">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="nameField" placeholder="Add your name" maxlength="15" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="number" class="form-control" id="scoreField" placeholder="Add your score" maxlength="4" pattern="[0-9]+" required>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" id="submitScore" class="btn btn-primary">
-                            Add Score
-                            <span class="spinner-border spinner-border-sm hide" id="addScoreSpinner" role="status" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                    <div class="col-4">
-                        <button id="leftArrow" onclick=previousImg()>❮</button>
-                        <img src="${duckImages[index]}" class="duck-img" id="duck" alt="duck${index}"/>
-                        <button id="rightArrow" onclick=nextImg()>❯</button>
-                    </div>
-                </form>
-            </div>`;
+const currentIndex = () => duckID;
 
-export {NewForm,prevImg,nextImg};
+const currentSubmission = () => `<div class="col-12">
+            <ul class="scoresView" id="submission-list">
+              <li>
+                  <span>No location entries added yet </span>
+              </li>
+            </ul>`;
+
+const buildEntryView = (duck = 0,loc = 0,room = 0) => (loc > 0) ?
+    `<li>
+        <span>Duck: ${duck}, Location: ${loc} - ${getLocation(loc)}, Room: ${room}</span>
+    </li>` : ``
+
+
+const populateSubmissionListView = (submissionData) => {
+  const dataLength = submissionData.length;
+  const scoresView = document.querySelector('#submission-list');
+
+  let listItems = '';
+
+  if (dataLength > 0) {
+    for(let i = 0; i < dataLength;i++){
+      listItems += buildEntryView(i,submissionData[i].loc,submissionData[i].room)
+    }
+    scoresView.innerHTML = listItems;
+  }
+};
+
+export {NewForm,prevImg,nextImg,currentIndex,populateSubmissionListView};

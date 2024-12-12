@@ -1,4 +1,4 @@
-import {NewForm,prevImg,nextImg } from '../views/SubmitForm.js';
+import {NewForm,prevImg,nextImg,currentIndex,populateSubmissionListView} from '../views/SubmitForm.js';
 import Footer from '../views/Footer.js';
 import { modalMessages, modalSetup } from '../views/Modals.js';
 import { recentScores } from '../views/RecentScores.js';
@@ -9,6 +9,7 @@ import {
   uploadGameScores,
   refreshList,
 } from './ServiceController.js';
+import {addSubmissionEntry,initializeSubmission,getSubmission} from './SubmissionListHandler.js';
 
 const setUpEnterListerners = () => {
   const leaderContent = document.querySelector('.leaderboard-content');
@@ -26,8 +27,18 @@ const setUpEnterListerners = () => {
         uploadGameScores(addForm);
         addContainer.style.display = "none";
         newBtn.style.display = "initial";
-
       });
+
+    const duckLocationEntry = document.querySelector('#duckLocationEntry');
+    duckLocationEntry.addEventListener('submit', (e) => {
+      e.preventDefault();
+      console.log(currentIndex())
+      console.log(duckLocationEntry[0].value);
+      //add entry
+      addSubmissionEntry(currentIndex(),duckLocationEntry[0].value,duckLocationEntry[1].value);
+      //update list view
+      populateSubmissionListView(getSubmission());
+    });
 
     const overlayObject = startLeaderBoard();
     if (overlayObject.className === undefined) {
@@ -41,6 +52,10 @@ const setUpEnterListerners = () => {
     }
     
     newBtn.addEventListener('click', function(){
+      //reset submission
+      initializeSubmission();
+      //update list view
+      populateSubmissionListView(getSubmission());
       addContainer.style.display = "block";
       newBtn.style.display = "none";
     });
