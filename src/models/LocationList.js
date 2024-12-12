@@ -66,7 +66,6 @@ function LocationList (){
     for(let i = 0; i < locations.length;i++){
         listItems += `<option value="${i}">${i} - `+locations[i]+`</option>`;
       }
-    console.log(listItems);
     return listItems;
 }
 
