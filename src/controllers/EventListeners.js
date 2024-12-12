@@ -32,8 +32,6 @@ const setUpEnterListerners = () => {
     const duckLocationEntry = document.querySelector('#duckLocationEntry');
     duckLocationEntry.addEventListener('submit', (e) => {
       e.preventDefault();
-      console.log(currentIndex())
-      console.log(duckLocationEntry[0].value);
       //add entry
       addSubmissionEntry(currentIndex(),duckLocationEntry[0].value,duckLocationEntry[1].value);
       //update list view
