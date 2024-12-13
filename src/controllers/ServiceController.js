@@ -9,6 +9,8 @@ import { setGameTitle } from './Starter.js';
 import { populateScoresList } from '../views/RecentScores.js';
 import { toogleNotifier } from './DialogHandler.js';
 import validateInputs from './Validator.js';
+import { getSubmission } from './SubmissionListHandler.js';
+import { calculateScores} from './ScoreCalculator.js';
 
 const createGame = (setupForm, modal) => {
   const gameName = setupForm[0].value;
@@ -68,7 +70,7 @@ const refreshList = async (onAdd = false) => {
 
 const uploadGameScores = (addForm) => {
   let user = addForm[0].value;
-  const scores = addForm[1].value;
+  const scores = calculateScores(getSubmission());
 
   const valid = validateInputs(user, scores);
   if (valid[0]) {
