@@ -1,5 +1,5 @@
 const validateInputs = (user, scores) => {
-  console.log(scores)
+  console.log(`Score = `+scores)
   if (user.trim().length === 0 || user.trim().length > 15 || user.trim().length < 3) {
     return [false, 'Username should have between 3 - 15 characters', 'failure'];
   } if (scores.length > 4 || scores == '0') {

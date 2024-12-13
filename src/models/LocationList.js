@@ -39,7 +39,7 @@ const locations = [
     `Savannah G2 Thermal ALD System`,
     `Fiji G2 Plasma Enhanced ALD System`,
     `Plasma-Therm Apex SLR HDPCVD`,
-    `Signatone S-1160 Probe Station`,
+    `Plasma-Therm Vision 310 PECVD`,
     `Keysight B1500A Semiconductor Device Analyze`,
     `FMS Thin Film Stress Measurement System`,
     `Plasma-Therm ICP Fluorine Etch II`,

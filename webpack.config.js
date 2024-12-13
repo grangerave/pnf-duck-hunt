@@ -32,4 +32,13 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    fallback: {
+      // Map missing modules to their polyfills
+      "crypto": require.resolve("crypto-browserify"),
+      "stream": false,//require.resolve("stream-browserify"),
+      "buffer": false,//require.resolve("buffer/"),
+      "vm": false,
+    }
+  }
 };
