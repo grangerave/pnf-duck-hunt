@@ -12,32 +12,16 @@ import validateInputs from './Validator.js';
 import { getSubmission } from './SubmissionListHandler.js';
 import { calculateScores} from './ScoreCalculator.js';
 
-const createGame = (setupForm, modal) => {
-  const gameName = setupForm[0].value;
-  if (gameName.trim().length >= 2) {
-    spinnerToogle('setupSpinner', true);
-    createNewGame(gameName)
-      .then((data) => {
-        const gameID = data.result.substr(14, 20);
-        StorageManager.storeData(gameID, gameName);
-        spinnerToogle('setupSpinner', false);
-        modal.hide();
-        setupForm.reset();
-        setGameTitle(gameName);
-      })
-      .catch((error) => {
-        toogleNotifier(error, 'failure');
-      });
-  } else {
-    const createGameMsg = document.querySelector('.createGameMsg');
-    createGameMsg.classList.remove('hide');
-    createGameMsg.classList.add('add');
-    setupForm.reset();
-    setTimeout(() => {
-      createGameMsg.classList.remove('add');
-      createGameMsg.classList.add('hide');
-    }, 3000);
-  }
+const createGame = () => {
+  //Hard coded game ID
+  const gameID = "O4XI6MObs85QPLt5N9Pi";
+  const gameName = "PNFDuckHunt2024";
+
+  StorageManager.storeData(gameID, gameName);
+  //spinnerToogle('setupSpinner', false);
+  //modal.hide();
+  //setGameTitle(gameName);
+  return gameName;
 };
 
 const sortArray = (data) => data.sort((a, b) => b.score - a.score);

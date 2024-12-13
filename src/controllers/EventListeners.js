@@ -38,7 +38,11 @@ const setUpEnterListerners = () => {
       populateSubmissionListView(getSubmission());
     });
 
+    
     const overlayObject = startLeaderBoard();
+    createGame(overlayObject);
+    populateFirstTime(overlayObject);
+    /*
     if (overlayObject.className === undefined) {
       const setupForm = document.querySelector('#setupLeaderBoard');
       setupForm.addEventListener('submit', (e) => {
@@ -48,6 +52,7 @@ const setUpEnterListerners = () => {
     } else {
       populateFirstTime(overlayObject);
     }
+    */
     
     newBtn.addEventListener('click', function(){
       //reset submission

@@ -16,7 +16,7 @@ const toogleNotifier = (message, statusClass) => {
 const setupFormModal = () => {
   const setUpForm = document.querySelector('#setupFormModal');
   const modal = new Modal(setUpForm, {});
-  modal.show();
+  //modal.show();
   return modal;
 };
 

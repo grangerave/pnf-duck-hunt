@@ -1,5 +1,5 @@
 const locations = [
-    `YES-58TA Vacuum Bake/HMDS Vapor Prime`,
+    `None`,
     `YES-CV200 RFS Plasma Strip/Descum System`,
     `Nikon Eclipse L200 Optical Microscope-2`,
     `Nikon Eclipse L200 Optical Microscope-3`,

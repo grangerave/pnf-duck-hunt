@@ -1,6 +1,7 @@
 import StorageManager from '../models/StorageManager.js';
 import { setupFormModal } from './DialogHandler.js';
 import { retrieveRecentScoresLoader } from './SpinnerHandler.js';
+import { createGame} from './ServiceController.js';
 
 const setGameTitle = (gameName) => {
   const gameNameSpan = document.querySelector('.gameName');
@@ -11,9 +12,10 @@ const setGameTitle = (gameName) => {
 const startLeaderBoard = () => {
   const gameData = StorageManager.getData();
   if (gameData.length === 0) {
-    return setupFormModal();
+    setGameTitle(createGame());
+  }else{
+    setGameTitle(gameData.gameName);
   }
-  setGameTitle(gameData.gameName);
   return retrieveRecentScoresLoader();
 };
 
